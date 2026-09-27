@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+  <meta name="theme-color" content="#DD6C9A">
+  <title>Квест ко дню рождения</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="viewport" aria-live="polite">
+    <div class="stage" id="stage">
+      <section class="slide active slide-1" data-slide="1">
+        <h1 class="copy s1-title">Сперва<br>подтвердите свою<br>личность</h1>
+        <p class="copy s1-copy">Ты ведь пикми Алиска?</p>
+        <button class="quest-btn s1-yes" type="button" data-goto="3">Я пикми!</button>
+        <button class="quest-btn s1-no" type="button" data-goto="2">Не пикми</button>
+      </section>
+
+      <section class="slide slide-2" data-slide="2">
+        <div class="media framed-media s2-media"><img src="assets/PhotoPage2.jpg" alt=""></div>
+        <h2 class="copy s2-title">Что ты мне<br>заливаешь?</h2>
+        <p class="copy s2-copy">Я же знаю, что ты та<br>самая пикми Алиска</p>
+        <button class="quest-btn s2-btn" type="button" data-goto="3">Ладно, я пикми</button>
+      </section>
+
+      <section class="slide slide-3" data-slide="3">
+        <h1 class="copy s3-title">С Днем рождения!<br>Мой лисенок</h1>
+        <p class="copy s3-copy-a">Я знал, что ты пикми!</p>
+        <p class="copy s3-copy-b">Тебе нужно найти свои<br>подарки через квест</p>
+        <p class="copy s3-copy-c">Чтобы начать квест,<br>необходимо поцеловать<br>Игоря</p>
+        <div class="code-block code-block-s3">
+          <label for="code3">Подтвержденный<br>поцелуй:</label>
+          <input id="code3" class="code-input" type="text" inputmode="numeric" autocomplete="off" maxlength="4" aria-label="Подтвержденный поцелуй">
+        </div>
+      </section>
+
+      <section class="slide slide-4" data-slide="4">
+        <div class="media framed-media wide-media s4-media"><img src="assets/PhotoPage4.png" alt=""></div>
+        <p class="copy intro-copy">
+          Твоя задача — пройти квест и<br>
+          найти свои подарки!<br>
+          Чтобы добраться до них, тебе<br>
+          предстоит разгадывать<br>
+          загадки. На каждом этапе<br>
+          квеста ты получишь<br>
+          четырёхзначный код — введи<br>
+          его правильно, чтобы пройти<br>
+          дальше и приблизиться к<br>
+          подаркам.
+        </p>
+        <div class="code-block code-block-s4">
+          <label for="code4">Введи свой пинкод от<br>телефона:</label>
+          <input id="code4" class="code-input" type="text" inputmode="numeric" autocomplete="off" maxlength="4" aria-label="Введите пинкод от телефона">
+        </div>
+      </section>
+
+      <section class="slide slide-5" data-slide="5">
+        <div class="media framed-media clue-media s5-media">
+          <video src="assets/VideoPage5.mp4" autoplay muted loop playsinline aria-label="Видео подсказка"></video>
+        </div>
+        <p class="copy clue clue-s5">
+          Первый подарок спрятан в<br>
+          месте, где в прошлой<br>
+          квартире тебе было<br>
+          некомфортно, а в новой ты<br>
+          не можешь им<br>
+          налюбоваться.
+        </p>
+        <div class="code-block code-block-s5">
+          <label for="code5">Найденный код:</label>
+          <input id="code5" class="code-input" type="text" inputmode="numeric" autocomplete="off" maxlength="4" aria-label="Найденный код первого подарка">
+        </div>
+      </section>
+
+      <section class="slide slide-6" data-slide="6">
+        <div class="media framed-media reward-media s6-media"><img src="assets/PhotoPage6.png" alt=""></div>
+        <p class="copy reward reward-s6">Цветочки, УРА, дождалась<br>:)</p>
+        <button class="quest-btn standard-btn" type="button" data-next>Дальше</button>
+      </section>
+
+      <section class="slide slide-7" data-slide="7">
+        <div class="media framed-media clue-media s7-media">
+          <video src="assets/VidoPage7.mp4" autoplay muted loop playsinline aria-label="Видео подсказка"></video>
+        </div>
+        <p class="copy clue clue-s7">
+          Второй подарок ты<br>
+          найдёшь в предмете,<br>
+          который никак не хочет<br>
+          переезжать из спальни в<br>
+          гардероб.
+        </p>
+        <div class="code-block code-block-s7">
+          <label for="code7">Найденный код:</label>
+          <input id="code7" class="code-input" type="text" inputmode="numeric" autocomplete="off" maxlength="4" aria-label="Найденный код второго подарка">
+        </div>
+      </section>
+
+      <section class="slide slide-8" data-slide="8">
+        <div class="media framed-media reward-media s8-media"><img src="assets/PhotoPage8.jpg" alt=""></div>
+        <p class="copy reward reward-s8">Ты сильно хотела малину в шоколаде и я не мог тебе её не купить)</p>
+        <button class="quest-btn standard-btn" type="button" data-next>Дальше</button>
+      </section>
+
+      <section class="slide slide-9" data-slide="9">
+        <h2 class="copy s9-title">А теперь<br>небольшой<br>перерыв от квеста</h2>
+        <p class="copy s9-copy">Реши мне данные пределы,<br>напиши ответы через<br>запятую и без пробелов</p>
+        <div class="media plain-media s9-media"><img src="assets/PhotoPage9.png" alt=""></div>
+        <div class="code-block code-block-s9">
+          <label for="code9">Ответ:</label>
+          <input id="code9" class="code-input instant-input" type="text" inputmode="numeric" autocomplete="off" aria-label="Ответ">
+        </div>
+      </section>
+
+      <section class="slide slide-10" data-slide="10">
+        <div class="media framed-media reward-media s10-media">
+          <video src="assets/VideoPage10.MP4" autoplay muted loop playsinline aria-label="Видео перерыва"></video>
+        </div>
+        <p class="copy reward reward-s10">Да ладно, я знаю, что ты<br>это решать не будешь,<br>идем дальше</p>
+        <button class="quest-btn standard-btn" type="button" data-next>Дальше</button>
+      </section>
+
+      <section class="slide slide-11" data-slide="11">
+        <div class="media framed-media clue-media s11-media">
+          <video src="assets/VideoPage11.mp4" autoplay muted loop playsinline aria-label="Видео подсказка"></video>
+        </div>
+        <p class="copy clue clue-s11">
+          Третий подарок ты<br>
+          найдёшь среди того, чем<br>
+          мы активно пользовались в<br>
+          прошлой квартире, а в этой<br>
+          ты строго сказала это не<br>
+          трогать.
+        </p>
+        <div class="code-block code-block-s11">
+          <label for="code11">Найденный код:</label>
+          <input id="code11" class="code-input" type="text" inputmode="numeric" autocomplete="off" maxlength="4" aria-label="Найденный код третьего подарка">
+        </div>
+      </section>
+
+      <section class="slide slide-12" data-slide="12">
+        <div class="media framed-media reward-media s12-media"><img src="assets/PhotoPage12.png" alt=""></div>
+        <p class="copy reward reward-s12a">Неожиданно, да)?</p>
+        <p class="copy reward reward-s12b">Купон на 3 тысячи</p>
+        <button class="quest-btn standard-btn" type="button" data-next>Дальше</button>
+      </section>
+
+      <section class="slide slide-13" data-slide="13">
+        <div class="media framed-media clue-media s13-media">
+          <video src="assets/VideoPage13.mp4" autoplay muted loop playsinline aria-label="Видео подсказка"></video>
+        </div>
+        <p class="copy clue clue-s13">
+          Главный подарок ты<br>
+          найдёшь, где-то под Нью-<br>
+          Йорком.
+        </p>
+        <div class="code-block code-block-s13">
+          <label for="code13">Найденный код:</label>
+          <input id="code13" class="code-input" type="text" inputmode="numeric" autocomplete="off" maxlength="4" aria-label="Найденный код главного подарка">
+        </div>
+      </section>
+
+      <section class="slide slide-14" data-slide="14">
+        <div class="media framed-media reward-media s14-media"><img src="assets/PhotoPage14.png" alt=""></div>
+        <p class="copy reward reward-s14">Твой главный подарок!</p>
+        <button class="quest-btn standard-btn" type="button" data-next>Дальше</button>
+      </section>
+
+      <section class="slide slide-15" data-slide="15">
+        <div class="media framed-media reward-media s15-media">
+          <video src="assets/VideoPage15.mp4" autoplay muted loop playsinline aria-label="Видео поздравление"></video>
+        </div>
+        <p class="copy reward reward-s15">
+          Еще раз сильно извиняюсь<br>
+          за то, что твой главный<br>
+          подарок не успел<br>
+          приехать, мне грустно :(
+        </p>
+        <button class="quest-btn standard-btn" type="button" data-next>Дальше</button>
+      </section>
+
+      <section class="slide slide-16" data-slide="16">
+        <div class="media framed-media final-media s16-media"><img src="assets/PhotoPage16.jpg" alt=""></div>
+        <p class="copy final-copy">
+          Котенок, С Днем<br>
+          Рождения! Я тебя безумно<br>
+          люблю, ты у меня самая<br>
+          лучшая девушка на свете.<br>
+          У нас с тобой все<br>
+          получится, я заработаю<br>
+          нам мильёны и мы с тобой<br>
+          будем самые крутые на<br>
+          свете. Ты самая лучшая<br>
+          пикми на свете :)
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
